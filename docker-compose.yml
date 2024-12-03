@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  project:
+    build: .
+    container_name: project
+    ports:
+      - "3000:3000"  # Expondo a porta 3000 do container para a máquina local
+    environment:
+      - NODE_ENV=production
+    networks:
+      - project-network
+
+networks:
+  project-network:
+    driver: bridge
