@@ -2,7 +2,7 @@ import express from "express";
 import { Controller } from "../../application/controller";
 
 const router = express.Router();
-const controller = new Controller(); // Instanciando fora para reutilização
+const controller = new Controller();
 
 // Definindo a rota
 router.get(
