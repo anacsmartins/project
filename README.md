@@ -35,9 +35,9 @@ project/
 ## **Instruções de Setup**
 Pré-requisitos
   - **Node.js: v20.x ou superior**
-  - **Docker e Docker Compose**
-  - **Kubernetes (kubectl)**
+
 Passos para execução
+
 #### 1. Instalar dependências:
 
 ```bash
