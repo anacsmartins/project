@@ -4,7 +4,7 @@ const router = express.Router();
 
 // Definindo as rotas
 router.post(
-  "/rota",
+  "/name",
   //(req: any, res: any) => (new Controller).simulate(req, res)
 );
 

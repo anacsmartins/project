@@ -9,6 +9,7 @@ export class Server {
   constructor() {
     this.app = express();
     this.config();
+    this.defaultRoute();
     this.routes();
   }
 
@@ -17,8 +18,14 @@ export class Server {
     this.app.use(bodyParser.urlencoded({ extended: false }));
   }
 
+  private defaultRoute(): void {
+    this.app.get("/", (req, res) => {
+      res.json({ message: "Olá!" });
+    });
+  }
+
   private routes(): void {
-    this.app.use("/", routes);  // Rotas são registradas aqui
+    this.app.use("/", routes); // Rotas 
   }
 
   public start(port: number): void {
