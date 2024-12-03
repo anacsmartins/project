@@ -5,10 +5,6 @@ import request from "supertest";
 describe("Controller Test", () => {
   let serverInstance: Server;
 
-  jest.mock("@sendgrid/mail", () => ({
-    setApiKey: jest.fn(),
-  }));
-
   beforeAll(() => {
     // Mockando a variável de ambiente
 
