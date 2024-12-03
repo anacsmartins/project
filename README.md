@@ -24,7 +24,7 @@ project/
 └── package.json                                         # Dependências e scripts
 ```
 > [!NOTE]
-> Com esta estrutura, o microserviço está preparado para (...).
+> Com esta estrutura, o projeto está preparado para (...).
 
 ## Tecnologias e Decisões de Arquitetura
 - **Arquitetura Hexagonal:**
