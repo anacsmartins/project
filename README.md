@@ -71,35 +71,6 @@ docker build -t project .
 docker-compose up
 ```
 
-## Documentação dos Endpoints
-A documentação foi feita utilizando API Blueprint e está no diretório docs/api-blueprint.apib.
-
-Para gerar uma visualização legível, utilize **Aglio**:
-obs: certifique que a aplicação esta em execução. 
-
-```bash
-aglio -i src/docs/api.apib - theme-template triple -s
-```
-Agurade o seguinte retorno no console:
-
-```bash
-Rendering src/docs/api.apib
-Refresh web page in browser
-```
-Após exibição acesse http://127.0.0.1:3000/
-
-
-Exemplo de visualização de endpoints:
-
-> [!CAUTION]
-> Para que o projeto seja executado localmente, garanta que a execução do mock referente a documentação tenha sido interronpida. Por isso, uso excute ctrl+c no console.
-
-```bash
-Rendering src/docs/api.apib
-Refresh web page in browser
-> cntrl+c
-```
-
 ## Testes
 ### Testes de Unidade
 Testam a lógica de cálculo de empréstimos:
